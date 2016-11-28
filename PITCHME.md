@@ -3,9 +3,26 @@
 
 #HSLIDE
 ## What it is
-* JavaScript is a cross-platform, object-oriented scripting language
-* Lightweight
-* 
+* cross-platform
+* object-oriented scripting language
+* Small and Lightweight
+
+#HSLIDE
+## Where it is used
+### Client side
+* interaction
+* document manipulation
+* browser manipulation
+* extensions
+
+### Server side
+* data base access
+* file system
+* routing
+* etc
+
+
+* Small and Lightweight
 
 #HSLIDE
 
