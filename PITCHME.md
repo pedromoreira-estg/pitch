@@ -2,25 +2,47 @@
 ## JavaScript
 
 #HSLIDE
+## History
+* 1995: At Netscape, Brendan Eich created LiveScript (then renamed to "JavaScript")
+* 1996: Microsoft releases "JScript", a port for IE3.
+* 1997: JavaScript was standardized in the "ECMAScript" spec.
+* 2005: "AJAX" was coined and the web 2.0 age begins.
+* 2006: jQuery 1.0 was released.
+* 2010: Node.JS was released.
+* 2015: ECMAScript 6 was released.
+
+#HSLIDE
 ## What it is
 * cross-platform
-* object-oriented scripting language
-* Small and Lightweight
+* object-oriented
+* small and lightweight
+* scripting language
 
 #HSLIDE
 ## Where it is used
-### Client side
-* interaction
-* document manipulation
-* browser manipulation
+### web @client side (browser)
+* document manipulation (DOM scripting)
+* interfacing with Web APIs 
+* asynchronous requests
+* interaction & animation
 * ...
 
 #HSLIDE
 ## Where it is used
-### Server side
-* data base access
-* file system
-* routing
+### web @server side
+* server runtime environment (node.js)
+* databases (MongoDB, CouchDB)
+* workflow automation (e.g. Gulp)
+* transpilers (Coffee Script, Babel)
+* ...
+
+#HSLIDE
+## Where it is used
+### @many other applications
+* game engines (Unity 3D)
+* document producers (Adobe Acrobat)
+* GUI (GNOME)
+* embedded computers and micro-controllers (Espruino)
 * ...
 
 #HSLIDE
