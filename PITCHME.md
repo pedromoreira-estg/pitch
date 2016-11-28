@@ -15,6 +15,8 @@
 * browser manipulation
 * ...
 
+#HSLIDE
+## Where it is used
 ### Server side
 * data base access
 * file system
