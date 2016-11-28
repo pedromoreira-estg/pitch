@@ -13,16 +13,13 @@
 * interaction
 * document manipulation
 * browser manipulation
-* extensions
+* ...
 
 ### Server side
 * data base access
 * file system
 * routing
-* etc
-
-
-* Small and Lightweight
+* ...
 
 #HSLIDE
 
