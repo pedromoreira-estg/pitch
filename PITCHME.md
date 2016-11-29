@@ -19,6 +19,7 @@
 * object-oriented
 * dynamically typed
 * small and lightweight
+
 ###scripting language
 
 #HSLIDE
@@ -63,7 +64,7 @@
 * Number (IEEE double float)
 * String
 * Boolean
-* Object
+* Object (Function, Array, Date, RegExp)
 
 * `undefined` and `null` (special)
 * Symbol (immutable, new in ES6)
@@ -72,9 +73,7 @@
 ## strict mode
 * `use strict` at the beginning of a script or function 
 
-An optional mode to write code in a more restricted JavaScript variant.
-
-as for example:
+An optional mode to write code in a more restricted JavaScript variant, as for example:
 * do not allow using undeclared variables
 * do not allow object properties with the same name
 * do not allow deleting variables or functions
@@ -89,6 +88,39 @@ as for example:
  * Declares a variable, optionally initializing it to a value.
 * `const`
  * Declares a read-only named constant.
+
+#HSLIDE
+## Output
+JavaScript has no built-in input / output.
+
+but it can display to ...
+* to the console (browser, node.js, other environments)
+* to window alert boxes (browsers)
+* to HTML documents (via write ou innerHTML)
+* ...
+
+
+#HSLIDE
+## Output
+JavaScript has no built-in input / output.
+
+but it can read data from ...
+* prompt windows (browsers)
+* HTML forms (HTML document)
+* command line, via custom modules (e.g. `prompt`in node.js)
+* requests
+* ...
+
+## Objects
+### Object Literals 
+
+```javascript
+var person = {
+name: "James",
+say: function (something) { console.log(something); }
+};
+```
+
 
 
 #HSLIDE
