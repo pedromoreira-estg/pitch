@@ -1,2 +1,2 @@
-theme-override : assets/css/PITCHME.css
+theme-override : PITCHME.css
 vertical-center : true
