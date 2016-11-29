@@ -120,8 +120,13 @@ name: "James",
 say: function (something) { console.log(something); }
 };
 ```
+#HSLIDE
+## Object properties access 
 
-
+```javascript
+console.log(person.name);
+say('hi');
+```
 
 #HSLIDE
 
