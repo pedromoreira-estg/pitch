@@ -9,7 +9,8 @@
 * 2005: "AJAX" was coined and the web 2.0 age begins.
 * 2006: jQuery 1.0 was released.
 * 2010: Node.JS was released.
-* 2015: ECMAScript 6 was released.
+* 2015: ECMAScript 6 was released (lots of new features)
+* 2016: ECMAScript 7 was released (small release)
 
 #HSLIDE
 ## What it is
@@ -44,6 +45,20 @@
 * GUI (GNOME)
 * embedded computers and micro-controllers (Espruino)
 * ...
+
+
+#HSLIDE
+## Syntax & Grammar
+* case sensitive
+* statements (instructions) separeted by ";"
+* inline comments `//` comment untl end of line
+* block comments `/* comment util closed */`
+
+
+
+#HSLIDE
+## Data Types
+* 
 
 #HSLIDE
 
