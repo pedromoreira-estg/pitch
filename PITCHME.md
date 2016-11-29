@@ -111,8 +111,8 @@ but it can read data from ...
 * requests
 * ...
 
-## Objects
-### Object Literals 
+#HSLIDE
+## Object Literals 
 
 ```javascript
 var person = {
