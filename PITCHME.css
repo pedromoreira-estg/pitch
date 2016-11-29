@@ -314,6 +314,9 @@ body {
   -ms-touch-action: none;
       touch-action: none; }
 
+.reveal .slides p {
+  text-align : left;
+}
 .reveal .slides {
   position: absolute;
   width: 100%;
