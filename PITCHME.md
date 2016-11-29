@@ -115,10 +115,23 @@ but it can read data from ...
 ## Object Literals 
 
 ```javascript
+// literal declaration
 var person = {
-name: "James",
-say: function (something) { console.log(something); }
+name: 'James',
+say: function () { console.log('hi'); }
 };
+
+// properties and method access
+console.log(person.name);
+person.say('hi');
+
+// reassign values
+person.name = 'Jim';
+person.say = function (something) {console.log(something)};
+
+// add new properties
+person.familyname = "Waits";
+
 ```
 #HSLIDE
 ## Object properties access 
