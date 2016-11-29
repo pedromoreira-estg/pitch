@@ -63,10 +63,32 @@
 * Number (IEEE double float)
 * String
 * Boolean
-* Object (base )
+* Object
 
 * `undefined` and `null` (special)
 * Symbol (immutable, new in ES6)
+
+#HSLIDE
+## strict mode
+* `use strict` at the beginning of a script or function 
+
+An optional mode to write code in a more restricted JavaScript variant.
+
+as for example:
+* do not allow using undeclared variables
+* do not allow object properties with the same name
+* do not allow deleting variables or functions
+* do not allow escape characters
+* ...
+
+#HSLIDE
+## Declarations
+* `let`
+ * Declares a block scope local variable, optionally initializing it to a value.
+* `var`
+ * Declares a variable, optionally initializing it to a value.
+* `const`
+ * Declares a read-only named constant.
 
 
 #HSLIDE
