@@ -52,8 +52,10 @@
 ## Syntax & Grammar
 * case sensitive
 * statements (instructions) separeted by ";"
-* inline comments `// comment untl end of line`
-* block comments `/* comment util closed */`
+* inline comments 
+ * `// comment until end of line`
+* block comments 
+ * `/* comment until closed */`
 
 
 #HSLIDE
