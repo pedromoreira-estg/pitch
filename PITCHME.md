@@ -14,10 +14,12 @@
 
 #HSLIDE
 ## What it is
+### JavaScript is a
 * cross-platform
 * object-oriented
+* dynamically typed
 * small and lightweight
-* scripting language
+###scripting language
 
 #HSLIDE
 ## Where it is used
@@ -46,19 +48,24 @@
 * embedded computers and micro-controllers (Espruino)
 * ...
 
-
 #HSLIDE
 ## Syntax & Grammar
 * case sensitive
 * statements (instructions) separeted by ";"
-* inline comments `//` comment untl end of line
+* inline comments `// comment untl end of line`
 * block comments `/* comment util closed */`
-
 
 
 #HSLIDE
 ## Data Types
-* 
+* Number (IEEE double float)
+* String
+* Boolean
+* Object (base )
+
+* `undefined` and `null` (special)
+* Symbol (immutable, new in ES6)
+
 
 #HSLIDE
 
