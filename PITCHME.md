@@ -150,18 +150,6 @@ but it can read data from ...
 
 
 #HSLIDE
-## Input
-JavaScript has no built-in input / output.
-
-but it can read data from ...
-
-* prompt windows (browsers)
-* HTML forms (HTML document)
-* command line, via custom widgets (e.g. `prompt`in node.js)
-* requests
-* ...
-
-#HSLIDE
 ## Functions 
 
 ```javascript
