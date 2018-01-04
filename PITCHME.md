@@ -1,5 +1,5 @@
 #HSLIDE
-# JavaScript
+# JavaScript Intro
 
 #HSLIDE
 ## History
@@ -20,7 +20,7 @@
 * dynamically typed
 * small and lightweight
 
-###scripting language
+### scripting language
 
 #HSLIDE
 ## Where it is used
@@ -85,7 +85,7 @@
 * comparison with type coercion : ==, !==
 * comparison without type coercion : ===, !===
 * boolean : && (and), || (or), ! (not)
-* ternary: cond1 ? expiftrue : else
+* ternary: cond1 ? exp_if_true : else
 
 #HSLIDE
 ## Control Structures
@@ -201,6 +201,47 @@ function avg(...args) {
 
 avg(2, 3, 4, 5); // 3.5
 ```
+#HSLIDE
+## Anonymous functions
+```js
+var avg = function() {
+  var sum = 0;
+  for (var i = 0, j = arguments.length; i < j; i++) {
+    sum += arguments[i];
+  }
+  return sum / arguments.length;
+};
+
+avg(1,2,3,4,5); // 3.4
+
+```
+#HSLIDE
+## Creating context with IIFE
+#### immediate invoked function expression
+```js
+var a = 1;
+var b = 2;
+
+(function() {
+  var b = 3;
+  a += b;
+})();
+
+a; // 4
+b; // 2
+```
+
+
+#HSLIDE
+## recursive functions
+```js
+function fibonacci(num) {
+  if (num <= 1) return 1;
+
+  return fibonacci(num - 1) + fibonacci(num - 2);
+}
+```
+
 
 
 
@@ -225,7 +266,7 @@ person.age = 33;
 ```
 
 #HSLIDE
-## Object properties access 
+## Object properties 
 
 ```javascript
 // object properties can be anything
@@ -235,7 +276,22 @@ person.name = {
   last : "Regal"
 }
 
+person.talk("my name is " + 
+					person.name.first + " " +
+					person['name']['last']);
+					
 // arrays (of any kind of values)
 person.programming = ['JavaScript','C/C++'];
 ```
 
+#HSLIDE
+## Object property this
+
+```javascript
+var person2 = {
+name: 'James',
+talk: function () { console.log('I am ' + this.name); }
+};
+
+person2.talk();
+```
