@@ -1,5 +1,5 @@
 #HSLIDE
-## JavaScript
+# JavaScript
 
 #HSLIDE
 ## History
@@ -70,10 +70,45 @@
 * Symbol (immutable, new in ES6)
 
 #HSLIDE
+## Operators
+
+* numeric: +, -, *, /
+* numeric: % (remainder)
+* inc & dec : ++ , -- (prefix or postfix)
+* assignment: =
+* coumpound: =*, =-, ...
+* string concatenation: +
+
+#HSLIDE
+## Operators
+* comparison: <, >, =>, <=
+* comparison with type coercion : ==, !==
+* comparison without type coercion : ===, !===
+* boolean : && (and), || (or), ! (not)
+* ternary: cond1 ? expiftrue : else
+
+#HSLIDE
+## Control Structures
+* if () {}
+* if () else {}
+* if () elseif {} elseif {} else {}
+
+#HSLIDE
+## Control Structures
+* do {} while ()
+* while () {}
+* for (;;) {}
+* for (let value of array) {} // arrays
+* for (let prop in object) {} // objects
+* switch () {case v1: s1; break; ... default : sd; }
+
+
+#HSLIDE
 ## strict mode
 * `use strict` at the beginning of a script or function 
 
 An optional mode to write code in a more restricted JavaScript variant, as for example:
+
 * do not allow using undeclared variables
 * do not allow object properties with the same name
 * do not allow deleting variables or functions
@@ -94,6 +129,7 @@ An optional mode to write code in a more restricted JavaScript variant, as for e
 JavaScript has no built-in input / output.
 
 but it can display to ...
+
 * to the console (browser, node.js, other environments)
 * to window alert boxes (browsers)
 * to HTML documents (via write ou innerHTML)
@@ -105,31 +141,68 @@ but it can display to ...
 JavaScript has no built-in input / output.
 
 but it can read data from ...
+
 * prompt windows (browsers)
 * HTML forms (HTML document)
-* command line, via custom modules (e.g. `prompt`in node.js)
+* command line, via custom widgets (e.g. `prompt`in node.js)
+* requests
+* ...
+
+
+#HSLIDE
+## Input
+JavaScript has no built-in input / output.
+
+but it can read data from ...
+
+* prompt windows (browsers)
+* HTML forms (HTML document)
+* command line, via custom widgets (e.g. `prompt`in node.js)
 * requests
 * ...
 
 #HSLIDE
-## Objects 
+## Functions 
+
 ```javascript
-// object literal declaration
-var person = {
-firstname: 'James',
-say: function () { console.log('hi'); }
-};
-
-// properties and method access
-console.log(person.name);
-person.say('hi');
-
-// reassign values
-person.say = function (something) {console.log(something)};
-
-// add new properties
-person.lastname = "Waits";
+function add(x, y) {
+  var total = x + y;
+  return total;
+}
+add(); // NaN
+add(2, 3, 4); // 5
 ```
+
+#HSLIDE
+## Function arguments
+
+```javascript
+function add() {
+  var sum = 0;
+  for (var i = 0, j = arguments.length; i < j; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+add(2, 3, 4, 5); // 14
+```
+#HSLIDE
+## Function arguments
+
+
+```javascript
+function avg(...args) {
+  var sum = 0;
+  for (let value of args) {
+    sum += value;
+  }
+  return sum / args.length;
+}
+
+avg(2, 3, 4, 5); // 3.5
+```
+
+
 
 #HSLIDE
 ## Objects
@@ -142,7 +215,7 @@ talk: function () { console.log('hi'); }
 
 // properties and method access
 console.log(person.name);
-person.talk('hi');
+person.talk();
 
 // reassign values
 person.talk = function (something) {console.log(something)};
