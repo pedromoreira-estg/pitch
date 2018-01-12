@@ -1,8 +1,6 @@
 #HSLIDE
 # JavaScript Intro
-#### Disclaimer
-Parts of these have material adapted from MDN JS
-Parts of these have material adapted from CIS 197 UPenn
+
 
 #HSLIDE
 # JavaScript Intro
@@ -401,3 +399,8 @@ person2.talk();
 var talk =  function () { console.log('I am ' + this); };
 talk();
 ```
+
+#HSLIDE
+#### Disclaimer
+Parts of these have material adapted from MDN JS
+Parts of these have material adapted from CIS 197 UPenn
