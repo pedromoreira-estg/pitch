@@ -1,6 +1,6 @@
 #HSLIDE
 # JavaScript Intro
-####Pedro Miguel Moreira
+#### Pedro Miguel Moreira
 
 #HSLIDE
 ## History
@@ -85,7 +85,7 @@ var cube = function (x) {
 ```
 
 #HSLIDE
-##Strings
+## Strings
 * Strings may be enclosed with single quotes or double quotes.  
 * Escape characters use backslash `'\n \t \\'`
 * Strings are *immutable* - once created, you can't change them (e.g. concatenating with the `+` operator returns a new string)
@@ -95,7 +95,7 @@ var cube = function (x) {
 
 
 #HSLIDE
-##Arrays
+## Arrays
 * Literal notation uses square brackets: `['foo', 'bar', baz']`
 * Can be heterogenous: `['foo', 1, true]`
 * Elements accessed with square bracket notation: `arr[0]`
@@ -104,7 +104,7 @@ var cube = function (x) {
 
 
 #HSLIDE
-##Booleans
+## Booleans
 
 * `true` and `false`
 * Standard logical operators (`&&, ||, !`)
@@ -193,7 +193,7 @@ but it can read data from ...
 * ...
 
 #HSLIDE
-##Functions
+## Functions
 
 * First-class object (this allows JS to take advantage of functional programming techniques)
 * Functions can return a value with the `return` keyword
@@ -206,7 +206,7 @@ var cube = function (x) {
 ```
 
 #HSLIDE
-##Functions vs Calls
+## Functions vs Calls
 
 A function call is very different from the function itself! A function call ends with parentheses.
 
