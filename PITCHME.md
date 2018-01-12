@@ -70,6 +70,49 @@
 * Symbol (immutable, new in ES6)
 
 #HSLIDE
+## Literals
+1. Numbers:`1, 2, 3, 1.28e4, NaN, Infinity`
+2. Strings: `'xyz', 'foo \n', '\u2603'`
+3. Boolean: `true, false`
+4. Objects: `{post: 'hello world', title: 'hello', userid : 123}`
+5. Array: `[1, 2, 'queijo', 'beijo']`
+6. Functions:
+```javascript
+var cube = function (x) {
+      return x * x * x;
+}
+```
+
+#HSLIDE
+##Strings
+* Strings may be enclosed with single quotes or double quotes.  
+* Escape characters use backslash `'\n \t \\'`
+* Strings are *immutable* - once created, you can't change them (e.g. concatenating with the `+` operator returns a new string)
+* There is no `char` - just use strings of length 1
+* Many methods/properties &ndash; `.length, substring(), toLowerCase(), toUpperCase()` ...
+* documentation [MDN string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+
+#HSLIDE
+##Arrays
+* Literal notation uses square brackets: `['foo', 'bar', baz']`
+* Can be heterogenous: `['foo', 1, true]`
+* Elements accessed with square bracket notation: `arr[0]`
+* several methods like `push(), pop(), slice(), shift(), unshift()`
+* documentation: [MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+
+#HSLIDE
+##Booleans
+
+* `true` and `false`
+* Standard logical operators (`&&, ||, !`)
+* JavaScript isn't statically typed : ANY value can be used with a logical operator
+  * *Falsy* values: `false, null, undefined, 0, NaN, ''`
+  * Any other value is *truthy* (including `'false', [], {}`)
+
+
+#HSLIDE
 ## Operators
 
 * numeric: +, -, *, /
@@ -116,7 +159,7 @@ An optional mode to write code in a more restricted JavaScript variant, as for e
 * ...
 
 #HSLIDE
-## Declarations
+## Scope
 * `let`
  * Declares a block scope local variable, optionally initializing it to a value.
 * `var`
@@ -147,6 +190,34 @@ but it can read data from ...
 * command line, via custom widgets (e.g. `prompt`in node.js)
 * requests
 * ...
+
+#HSLIDE
+##Functions
+
+* First-class object (this allows JS to take advantage of functional programming techniques)
+* Functions can return a value with the `return` keyword
+* If no value is returned, then the function returns `undefined`
+
+```javascript
+var cube = function (x) {
+  return x * x * x;
+}
+```
+
+#HSLIDE
+##Functions vs Calls
+
+A function call is very different from the function itself! A function call ends with parentheses.
+
+```javascript
+var cube = function (x) {
+  return x * x * x;
+}
+
+console.log(cube); // logs the function object
+console.log(cube(2)); // logs the result of the function call
+```
+
 
 
 #HSLIDE
@@ -231,6 +302,37 @@ function fibonacci(num) {
 ```
 
 
+#HSLIDE
+## Objects
+
+* Lightweight, mutable key-value stores
+* Literal notation uses curly braces: `{foo: 'bar', 'baz': 2}`
+* Property names can be strings: `{'foo': 'bar'}`
+* Access with `obj.propertyName` **or** `obj['propertyName']`
+
+#HSLIDE
+## Everything is an Object
+
+* Aside from the primitive types (String, boolean, and Number) - everything in JS is a kind of object
+  - Even primitives can behave like objects (Strings, for example, have properties/methods)
+* Array is an object with integer keys and specific methods (e.g. `splice(), indexOf()`)
+* Functions are also object-like, and can have properties and methods. Can be thought of as *executable objects*
+
+
+#HSLIDE
+## Objects
+```javascript
+var obj = {
+    someProperty: 'abcdef',
+    nestedObject: { a: 1, b: 2, c: 3 },
+    func: function () { 
+      return 0;
+    }
+  }
+
+  obj.someProperty        // --> 'abcdef'
+  obj['nestedObject'].a   // --> 1
+```
 
 
 #HSLIDE
@@ -282,4 +384,14 @@ talk: function () { console.log('I am ' + this.name); }
 };
 
 person2.talk();
+```
+#HSLIDE
+## Function property this
+* When a function is not assigne to an object, the `this` represents the **Global object**.
+ * in web browsers `this` is the Window object.
+ * in node `this` is a `global` object.
+
+```javascript
+var talk =  function () { console.log('I am ' + this); };
+talk();
 ```
