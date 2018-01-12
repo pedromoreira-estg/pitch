@@ -1,6 +1,6 @@
 #HSLIDE
 # JavaScript Intro
-#####Pedro Miguel Moreira
+####Pedro Miguel Moreira
 
 #HSLIDE
 ## History
